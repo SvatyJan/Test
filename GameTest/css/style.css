@@ -1,0 +1,507 @@
+*{ box-sizing:border-box; }
+
+html{
+font-family: sans-serif;		
+	}
+	
+
+.hlava{
+/*background-color: rgba(0,0,150,0.5);*/
+background-color: #00AAAA;
+background-image: linear-gradient(#000000, #00FFFF);
+color:white;
+width: 100%;
+margin:0 auto;
+text-align: center;
+min-height: 128px;
+	}
+	
+h1 {
+  font-size: 72px;
+  background: #FFFFFF;
+  background: -webkit-linear-gradient(#AA00FF, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+	
+.currency{
+position: absolute;
+right: 10px;
+min-height: 80px;
+min-width: 128px;
+text-align: left;
+padding-left: 5px;
+	}
+
+.mailbox{
+top:100px;
+position: absolute;
+right: 10px;
+width: 32px;
+height: 32px;
+margin-right: 50px;
+text-align: center;
+background-size:100%;background-position:center;
+transition: 0.5s ease;
+	}
+	
+.mailbox:hover{filter:drop-shadow(0px 0px 20px #FFFF00);transition: 0.5s ease;background-size:120%;}
+
+.mailboxoverlay{
+	color:#FF0000;
+	position: relative;  
+  overflow: hidden;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 26px;
+  width: 32px;
+  height: 32px;
+  margin:0 auto;}
+  
+  .mailboxoverlay:hover{opacity: 1;
+  overflow: hidden;
+  text-align: center;
+  margin:0 auto;
+  font-size: 26px;
+  color:#FF0000;}
+	
+.menu{
+width: 128px;
+display: inline-block;
+border: 1px solid black;
+/*background-color: cyan;*/
+background-color:#FFFFFF;
+    border: 3px solid #4996A8;
+    border-radius:2px;
+    padding:3px;
+    transition: 5s ease;
+    color: #0000AA;
+	}
+	
+	.menu:hover{
+	background-color:#FFFFFF; /*rgb(36,50,84)*/
+	box-shadow:0px 0px 60px #00FFFF;
+	border: 3px solid rgb(0,90,190);
+	color: #AA00FF;
+	transition: border 1s ease;
+	}
+
+.main{
+text-align: center;
+	}	
+	
+	.profilhlava{
+width: 100%;
+text-align: center;
+	}
+	
+	.profilmenu{
+width: 128px;
+display: inline-block;
+border: 1px solid black;
+background-color: rgba(20,150,150,1);
+color:white;
+transition: 2s ease;
+	}
+	
+	.profilmenu:hover{
+width: 128px;
+display: inline-block;
+border: 1px solid black;
+background-color: rgba(150,20,150,1);
+color:rgba(255,255,0,1);
+transition: 2s ease;
+	}
+	
+a{
+text-decoration: none;
+color: #6020FF;
+	}
+	
+.hlavnifotka{
+width:256px;
+height:256px;
+border-radius: 8px;
+filter:opacity(85%);
+transition: 2s ease;
+	}
+	
+.hlavnifotka:hover{
+width:256px;
+height:256px;
+border-radius: 120px;
+filter:opacity(100%);
+transition: 2s ease;
+	}
+	
+.fotky{
+width: 128px;
+height: 128px;
+margin: 20px;
+transition: 1s ease;
+
+	}
+.fotky:hover{
+margin: 20px;
+transition: 1s ease;
+box-shadow: 5px 5px #888888;
+transform: scale(1.1);
+	}
+	
+	#inner2{
+    opacity:0;
+    transition:opacity 2000ms;
+}
+#outer:hover #inner2{
+    opacity:1;
+    transition:none;
+}
+
+
+.zonemain{text-align: center;margin:0 auto;border:1px solid black;background-color: #CCCCCC;}
+.zonepolicko{width:128px;height: 128px;display: inline-block;margin:50px;text-align: center;text-align: center;
+vertical-align: middle;line-height: 100px;background-size:100%;background-position:center; color:#00AAAA; font-size: 28px;overflow: hidden;transition: 0.5s ease;}
+.zonepolicko:hover{background-size:110%; transition: 0.5s ease;}
+.zonepolicko a{color:#00AAAA;}
+.zonepolicko:hover{}
+
+.shop{background-color: rgba(160,160,160,1);}
+.shopmenu{background-color: rgba(0,160,160,1);}
+.shopimg{}
+.shopitemsborder{border:1px solid black;display: table;width: 100%;}
+.shopleftinv{background-color: grey;height: 384px;width: 1188px; margin-right: 100%; text-align: left;display: table-cell;} /*widht:1154px*/
+.shoprightinv{background-color: green;height: 384px;width: 384px;position: absolute;right:0;}
+
+.timer{position: absolute;left: 15px;top: 10px;z-index: -1;text-align: left;}
+
+.social{
+margin: 8px;
+width:64px;
+height:64px;
+transition: 1s -webkit-filter linear;
+}
+
+.social:hover{
+margin: 8px;
+width:64px;
+height:64px;
+filter:invert(100%);
+transition: 1s -webkit-filter linear;
+}
+
+.friendborder{width: 64px;min-height: 64px;border:1px solid black;text-align: center;margin:0 auto;display: inline-block;margin:12px;}
+
+.strength{background-color: rgba(255,0,0,0.5);float: left;max-width: 512px;min-width: 25%;}
+.agility	{background-color: rgba(0,255,0,0.5);float: left;max-width: 512px;min-width: 25%;}
+.intelect{background-color: rgba(0,0,255,0.5);float: left;max-width: 512px;min-width: 25%;}
+.passive	{background-color: rgba(60,60,60,0.5);float: left;max-width: 512px;min-width: 25%;}
+.spellpositions{border:1px solid black;height: 128px;width: 642px;display: inline-block;}
+.spellicon{width: 32px;height: 32px;}
+
+.statup{border-radius:24px;background-color: #000000;color: #FFFFFF;border:3px solid rgba(0,80,255,1);transition: 2s ease;}	
+.statup:hover{border-radius:24px;background-color: #FFFFFF;color: #000000;border:3px solid rgba(0,80,255,1);transition: 2s ease;cursor: pointer;}	
+
+.equipment{border:1px solid black;margin-left:5%;width: 384px;height: 384px; background-color: black; float: left;}
+
+.itemweapon{font-size: 18px;text-align: left;position:relative;width: 128px;height: 128px;
+background-color:rgba(0,0,0,1);display:inline-block;background-size:100%;background-position:center;transition: 0.5s ease;}
+.itemweapon:hover{background-size:110%;transition: 0.5s ease;}
+.itemhead {font-size: 18px;text-align: left;position:relative;width: 128px;height: 128px;
+background-color:rgba(0,0,0,1);display:inline-block;background-size:100%;background-position:center;transition: 0.5s ease;}
+.itemhead:hover{background-size:110%;transition: 0.5s ease;}
+.itemchest{font-size: 18px;text-align: left;position:relative;width: 128px;height: 128px;
+background-color:rgba(0,0,0,1);display:inline-block;background-size:100%;background-position:center;transition: 0.5s ease;}
+.itemchest:hover{background-size:110%;transition: 0.5s ease;}
+.itemboots{font-size: 18px;text-align: left;position:relative;width: 128px;height: 128px;
+background-color:rgba(0,0,0,1);display:inline-block;background-size:100%;background-position:center;transition: 0.5s ease;}
+.itemboots:hover{background-size:110%;transition: 0.5s ease;}
+
+.inventory{border:1px solid black;background-color: grey; float: right; height: 384px;width: 1152px; margin-right: 5%; text-align: left; display: inline-block;}
+
+/* START ITEM HOVER EFFECT */
+.textOverItem{
+font-size: 18px;
+text-align: left;
+position:relative;
+width: 128px;
+height: 128px;
+background-color:rgba(0,0,0,1);
+display:inline-block;
+background-size:100%;
+background-position:center;
+transition: 0.5s ease;}
+
+.textOverItem:hover{
+background-size:110%;
+transition: 0.5s ease;}
+
+.textOverItem:after{
+position:absolute;
+top:85%;
+bottom:0;
+left:0;
+right:0;
+word-wrap:break-word;
+white-space:pre-wrap;
+overflow:hidden;
+background-color:rgba(0,0,0,0.3);
+padding:0 8px;
+color:#FFFFFF;
+content:attr(data-text);
+transition: 0.5s ease;}
+
+.textOverItem:hover:after{
+opacity: 1;
+top:0;
+padding:8px;
+background-color:rgba(0,0,0,0.6);}
+
+.textOverItem:hover:first-line{
+color:#FFFFFF;
+font-weight: bold;
+font-size: 18px;}
+
+/* END ITEM HOVER EFFECT */
+
+/* START NEW ITEM HOVER EFFECT */
+.container {
+	display: inline-block;
+  position: relative;
+  height: 128px;
+  width: 128px;
+  max-width: 300px;
+  background-size:100%;
+background-position:center;
+transition: 0.5s;
+}
+
+.container:hover {
+background-size:115%;
+background-position:center;
+transition: 0.5s;
+}
+
+.overlay {
+  position: absolute; 
+  top: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 128px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  height: 41px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.itemtext {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dolnioverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .dolnioverlay {
+  height: 87px;
+}
+
+/* END NEW ITEM HOVER EFFECT */
+
+/* SPELL OVERLAY */
+.spelloverlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 128px;
+  transition: .5s ease;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  height: 20px;
+}
+
+.container:hover .spelloverlay {
+  opacity: 1;
+}
+
+.spelltext {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.spelldolnioverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .spelldolnioverlay {
+  height: 108px;
+}
+/* END SPELL OVERLAY*/
+
+/* PARTY */
+
+.groupborder{width:320px;height:64px;outline:1px solid black;position:absolute;top:9px;left:8px;text-align:left;}
+.groupbox{width: 64px;height: 64px;display: inline-block;background-size:100%;background-position:center;}
+.groupoverlay{position: relative;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  width: 64px;
+  height: 64px;
+  opacity: 0.5;
+  text-align: center;
+  font-size: 20px;
+  color: #00FFAA;
+  transition: 0.5s ease;}
+ .groupbox:hover .groupoverlay{height: 64px;opacity: 1}
+ 
+ /* END PARTY */
+
+.spellpositions{border:1px solid black;height: 128px;width: 642px;margin:0 auto;}
+.spellctverecek{display: inline-block;width: 128px;height: 128px;background-color: #CCCCCC;background-size:100%;background-position:center;transition: 0.5s ease;}
+.spellctverecek:hover{background-size:115%;transition: 0.5s;}
+
+.huntlevo{position: relative;margin-right: 100%;display: inline-block;border:3px solid red;}
+.huntpravo{position: relative;display: inline-block;border:3px solid blue;display: inline-block;}
+.huntspellpositions{border:1px solid black;height: 77px;width: 384px;margin:0 auto;}
+.huntspellctverecek{display: inline-block;width: 76.4px;height: 76.4px;background-color: #CCCCCC;background-size:100%;background-position:center;transition: 0.5s ease;}
+.huntspellctverecek:hover{background-size:115%;transition: 0.5s;}
+
+.library-wrap{margin:0 auto;display: inline-block;width: 100%;}
+.spell{width: 128px;height: 128px;background-size:100%;background-position:center;transition: 0.5s ease;color:rgba(0,0,0,0);}
+.spell:hover{width: 128px;height: 128px;background-size:110%;background-position:center;transition: 0.5s ease;color:rgba(0,0,0,1);}
+
+
+/* LIBRARY 2 */
+
+
+
+.library2 td{width:256px;height:128px;outline: 1px solid black;transition: 1s ease;}
+.library2 td:hover{cursor: pointer;transition: 1s ease;}
+.library2 {width:100%;}
+
+.nazev-kolekce{font-size: 38px;font-weight: bold;}
+.nazev-kouzla{font-size: 28px;}
+.popisek-kouzla{font-size: 18px;font-weight: normal;}
+
+.barva-textu-kouzla{color:#000000;}
+
+.obrazek-kouzla{width:128px;height:128px;background-size:100%;background-position:center;float:left;}
+
+/* KONEC LIBRARY 2 */
+
+/* CODEX */
+
+.codex{width: 100%;}
+.codex td{height: 300px;padding: 16px;}
+.codex-text-nadpis{font-size: 28px;width: 100%;text-align: right;}
+.codex-text{font-size: 24px;width: 100%;text-align: right;}
+.codex-enemy{width: 256px;height: 256px;background-size:100%;background-position:center;padding:24px;border-radius: 18px;transition: 1s ease;}
+.codex-enemy:hover{background-size:110%;background-position:center;}
+.codex-enemy-spellbar{padding:28px;}
+.codex-enemy-spell{width: 128px;height: 128px;background-size:100%;background-position:center;display: inline-block;transition: 1s ease;outline:1px solid; margin: 4px;}
+.codex-enemy-spell:hover{background-size:120%;background-position:center;transition: 1s ease;}
+
+/* KONEC CODEX */
+
+.levo{text-align: left;float: left;}
+.pravo{text-align: right;float: right;}
+.mid{margin-left: 384px;margin-right: 384px;background-color: black;color:white;min-height: 462px;border-left:1px solid white;border-right:1px solid white;}
+.combat{margin:0 auto;text-align: center;font-size: 24px;}
+	
+table{
+text-align: center;	
+	}
+	
+	table, th, td {
+    
+    border-collapse: collapse;
+}
+	
+.pata{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+width: 100%;
+height: 3%;
+text-align: center;
+background-color: rgb(138,43,226);
+background-color: #00AAAA;
+background-image: linear-gradient(#00AAAA , #000000);
+border-top: 1px solid black;
+background-size:100%;}
+	
+	
+/* GROUPHUNT */
+.grouphunt-deska{width:100%;background-color:grey;position:relative;}
+.grouphunt-levo{top: 0;left: 0;}
+.grouphunt-pravo{position:absolute;top: 0;right: 0;}
+.grouphunt-stred{position:absolute;top:0;left: 384px;right: 384px;max-height: 100%;padding-top: 128px;overflow: scroll;overflow-x: hidden;}
+
+.grouphunthrac{width: 384px;height: 384px;position: relative;top: 0;left: 0;margin-bottom: 5px;}
+
+.grouphunticona{width:256px;height:256px;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphunticona:hover{background-size:110%;background-position:center;transition: 1s ease;}
+
+.grouphuntpassive{width: 128px;height: 128px;position: absolute;right: 0;top: 0;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphuntpassive:hover{background-size:110%;background-position:center;transition: 1s ease;}
+
+.grouphuntultimate{width: 128px;height: 128px;position: absolute;right: 0;top: 128px;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphuntultimate:hover{background-size:110%;background-position:center;transition: 1s ease;}
+
+.grouphuntfirst{width: 128px;height: 128px;position:absolute;bottom: 0; left: 0;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphuntfirst:hover{background-size:110%;background-position:center;transition: 1s ease;}
+
+.grouphuntsecond{width: 128px;height: 128px;position:absolute;bottom: 0; left: 128px;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphuntsecond:hover{background-size:110%;background-position:center;transition: 1s ease;}
+
+.grouphuntthird{width: 128px;height: 128px;position:absolute;bottom: 0; left: 256px;background-size:100%;background-position:center;center;transition: 1s ease;border:1px solid white;}
+.grouphuntthird:hover{background-size:110%;background-position:center;transition: 1s ease;}
+/* GROUPHUNT */
+
+/* CHAT */ 
+.chat{position: fixed;bottom: -420px;right: 0px;width: 480px;height: 480px;border: 1px solid black;background-color: rgba(120,255,0,1); transition: 1s ease;border-top-left-radius: 25px;}
+.chat:hover{bottom: 0;right: 0;border-top-left-radius: 0px;background-color: rgba(180,180,255,0.6); transition: 0.5s ease;}
+.chat-text{width: 100%;position:relative;bottom: -400px;}
+.chat-type-here{width: 80%;height: 10%;}
+.chat-submit{width: 20%;height: 10%;}
+.chat-posty{position:absolute;display: inline-block;left: 0;width: 100%;max-height: 400px; overflow: scroll; overflow-x:hidden;}
+.chat-icon{width: 64px;height: 64px;background-size:100%;background-position:center;border-radius:48px;position:absolute;}
+.chat-textvpostu{background-color: rgba(0,180,180,0.6);right: 0;overflow: hidden;margin-bottom: 8px;border-radius: 25px;height: 60px;}
+.chat-delete{position:absolute;right:8px;color:#FF0000;transition: 0.5s ease;}
+.chat-delete:hover{color:#FFFF00;transition: 0.5s ease;}
+/* CHAT */
